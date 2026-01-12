@@ -1,0 +1,16 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:noble",
+	"forwardPorts": [3000],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"ms-vscode.live-server",
+				"aaron-bond.better-comments",
+				"bierner.markdown-mermaid",
+				"bradlc.vscode-tailwindcss"
+			]
+		}
+	}
+}

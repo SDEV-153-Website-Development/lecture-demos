@@ -1,0 +1,53 @@
+/* h2 {
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+span {
+    color: blue;
+}
+
+span {
+    color: yellow;
+}
+
+p {
+    color: red;
+} */
+
+html, body {
+    background: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #efefef;
+    padding: 16px;
+    display: block;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container.header {
+    background-color: white;
+}
+
+.full-width-img {
+    width: 100%;
+}
+
+#company-logo {
+    width: 100%;
+}
+
+.company-logo {
+    width: 200px;
+}
+
+.container h2 {
+    color: red;
+}

@@ -15,21 +15,58 @@
     <header class="container header">
         <img class="company-logo" id="company-logo" src="https://placehold.co/200x40" alt="GameSalesAnalytics.com">
         <h1>GameSalesAnalytics.com</h1>
-        <a href="games.html">See All Games</a>
+        <a class="nav-button" href="games.html">See All Games</a>
     </header>
     <section class="container">
         <h2>What do we do?</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Voluptatibus reprehenderit</span> eos aut modi amet nam, est vel totam provident deleniti temporibus optio minima debitis minus harum error.</p>
+        <p>We show you the top games right now!</p>
+        <div class="card">
+            <h2>Card Title</h2>
+            <img src="https://placehold.co/150" alt="">
+            <!-- <img src="https://placehold.co/150" alt=""> -->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non et vero a, accusamus ab dolore harum odio voluptatibus nisi, aperiam doloribus nihil excepturi reiciendis officia laborum perferendis sunt, quod cupiditate.</p>
+        </div>
     </section>
     <section class="container">
-        <div>
-            <div>
-                <div>
-                    <h2>Other Section</h2>
-                </div>
-            </div>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Voluptatibus reprehenderit</span> eos aut modi amet nam, est vel totam provident deleniti temporibus optio minima debitis minus harum error.</p>
+        <h2>Top 5 Games</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Active Player Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Counter-Strike 2</td>
+                    <td>1,111,037<button data-copy="1,111,037">Copy</button></td>
+                </tr>
+                <tr>
+                    <td>Dota 2</td>
+                    <td>544,346</td>
+                </tr>
+                <tr>
+                    <td>Arc Raiders</td>
+                    <td>297,886</td>
+                </tr>
+                <tr>
+                    <td>PUBG: Battlegrounds</td>
+                    <td>155,322</td>
+                </tr>
+                <tr>
+                    <td>Source SDK Base 2007</td>
+                    <td>150,915</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Email</label>
+            <input name="email" type="text" disabled>
+            <button disabled>Submit</button>
+        </form>
     </section>
 </body>
 </html>

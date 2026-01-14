@@ -15,10 +15,29 @@ p {
     color: red;
 } */
 
-html, body {
-    background: gray;
+/* * {
     padding: 0;
     margin: 0;
+} */
+
+* {
+    color: #202020;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+html,body {
+    background-color: rgb(200, 205, 206);
+    padding: 0;
+    margin: 0;
+}
+
+table,th,td {
+    border: 1px solid black;
 }
 
 .container {
@@ -32,9 +51,9 @@ html, body {
     margin-bottom: 1rem;
 }
 
-.container.header {
+/* .container.header {
     background-color: white;
-}
+} */
 
 .full-width-img {
     width: 100%;
@@ -48,6 +67,55 @@ html, body {
     width: 200px;
 }
 
-.container h2 {
-    color: red;
+input:disabled {
+    background-color: lightgray;
+    border: 0;
+}
+
+button,.nav-button {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(104, 169, 148);
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover,.nav-button:hover {
+    background-color: rgb(60, 116, 98);
+    text-decoration: underline;
+}
+
+tbody tr:nth-child(2n - 1) {
+    background-color: lightgrey;
+}
+
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    padding: 1rem;
+    max-width: 20rem;
+    color: white;
+}
+
+.card>h2 {
+    font-size: 16pt;
+    margin-bottom: 0.25rem;
+}
+
+*[data-copy] {
+    padding: 0;
+    background-color: transparent;
+}
+
+a[href*="google"] {
+
+}
+
+.article-image {
+    float: left;
+}
+
+.article-image::after {
+    clear: both;
 }

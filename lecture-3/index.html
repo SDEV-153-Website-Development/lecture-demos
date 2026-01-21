@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDEV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        html,body {
+            margin: 0;
+        }
+
+        * {
+            font-family: "Geist", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 30.24px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        header {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .menu-button {
+            background: transparent;
+            border: 0;
+            width: 32px;
+            height: 32px;
+            display: block;
+            font-size: 24px
+        }
+
+        .menu-button:hover {
+            cursor: pointer;
+        }
+
+        .hero {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(180deg, #000000 0%, #141414 0.01%, #142B31 100%);
+            color: #eee;
+        }
+
+        .button {
+            background: transparent;
+            border-radius: 4px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            color: #eee;
+            border-color: #eee;
+            border-width: 3px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .feature-img {
+            display: none;
+        }
+
+        .feature-list {
+            max-width: 1028px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Tablet Breakpoint */
+        @media screen and (min-width: 650px) {
+            .feature-list {
+                display: flex;
+                gap: 8px;
+            }
+
+            .feature-img {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://placehold.co/44" />
+            <span>SDEV</span>
+        </div>
+
+        <button class="menu-button">☰</button>
+    </header>
+    <section class="hero">
+        <h1>SDEV</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper.</p>
+        <button class="button">Get Started</button>
+    </section>
+    <div class="feature-list">
+        <section class="container">
+            <img class="feature-img" src="https://placehold.co/300x200" alt="">
+            <h2>Feature</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper. Suspendisse pulvinar, velit ac pharetra commodo, diam lacus sollicitudin tellus, a consectetur enim orci non felis.</p>
+        </section>
+        <section class="container">
+            <img class="feature-img" src="https://placehold.co/300x200" alt="">
+            <h2>Feature</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper. Suspendisse pulvinar, velit ac pharetra commodo, diam lacus sollicitudin tellus, a consectetur enim orci non felis.</p>
+        </section>
+        <section class="container">
+            <img class="feature-img" src="https://placehold.co/300x200" alt="">
+            <h2>Feature</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper. Suspendisse pulvinar, velit ac pharetra commodo, diam lacus sollicitudin tellus, a consectetur enim orci non felis.</p>
+        </section>
+    </div>
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="john@example.com">
+            <button>Submit</button>
+        </form>
+    </section>
+    <footer>
+        Copyright © 2014-2025 Eric Sexton
+    </footer>
+</body>
+</html>

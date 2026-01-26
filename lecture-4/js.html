@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <section>
+        <h2>Shop</h2>
+        <ul>
+            <li>
+                <button id="buy-oven">$5 Buy Oven (+1 cookie per second)</button>
+            </li>
+        </ul>
+        <button id="counter">0</button>
+    </section>
+    
+    <script>
+        let cookieCount = Number(localStorage.getItem('cookie-count'))
+        let ovenCount = Number(localStorage.getItem('oven-count'))
+        let counterButton = document.getElementById("counter")
+        let buyOvenButton = document.getElementById('buy-oven')
+
+        // Updates the cookie value and the button text
+        function updateCookieCount(newValue) {
+            cookieCount = newValue
+            localStorage.setItem("cookie-count", newValue)
+            counterButton.textContent = cookieCount
+        }
+
+        function updateOvenCount(newValue) {
+            ovenCount = newValue
+            localStorage.setItem("oven-count", newValue)
+        }
+
+        counterButton.addEventListener("click", function() {
+            updateCookieCount(cookieCount + 1)
+        })
+
+        buyOvenButton.addEventListener("click", function() {
+           if (cookieCount >= 5) {
+                updateCookieCount(cookieCount - 5)
+                updateOvenCount(ovenCount + 1)
+           }
+        })
+
+        setInterval(function() {
+            updateCookieCount(cookieCount + (ovenCount * 1))
+        }, 1000)
+
+        counterButton.textContent = cookieCount
+    </script>
+</body>
+</html>

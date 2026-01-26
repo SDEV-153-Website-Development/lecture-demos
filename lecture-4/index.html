@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDEV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        html,body {
+            margin: 0;
+        }
+
+        * {
+            font-family: "Geist", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 30.24px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        header {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            max-width: 1028px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .menu-button {
+            background: transparent;
+            border: 0;
+            width: 32px;
+            height: 32px;
+            display: block;
+            font-size: 24px
+        }
+
+        .menu-button:hover {
+            cursor: pointer;
+        }
+
+        .hero {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(180deg, #000000 0%, #141414 0.01%, #142B31 100%);
+            color: #eee;
+        }
+
+        .button {
+            display: block;
+            background: transparent;
+            border-radius: 8px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            color: #eee;
+            border: 2px solid #eee;
+            margin-left: auto;
+            margin-right: auto;
+            transform: scale(1.0);
+            text-decoration: none;
+            transition: all 0.3s ease-out;
+        }
+
+        .button:hover, .button:focus {
+            background-color: #eee;
+            color: #222;
+            border-color: #eee;
+        }
+
+        .button:active {
+            background-color: #ccc;
+            border-color: #ccc;
+        }
+
+        .button:visited {
+            border-color: blue;
+        }
+
+        .container {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .feature-img {
+            display: none;
+        }
+
+        .feature-list {
+            max-width: 1028px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            max-width: 800px;
+
+        }
+
+        nav > ul {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav a:hover {
+            border-bottom: 1px solid black;
+        }
+
+        nav a[aria-current="page"] {
+            font-weight: bold;
+        }
+
+        /* Tablet Breakpoint */
+        @media screen and (min-width: 650px) {
+            .feature-list {
+                display: flex;
+                gap: 8px;
+            }
+
+            .feature-img {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/lecture-4/" aria-label="Go To Home Page" aria-current="page" class="logo-container">
+            <img src="https://placehold.co/44" alt="" />
+            <span>SDEV</span>
+        </a>
+
+        <nav >
+            <ul>
+                <li><a aria-current="page" href="/lecture-4/">Home</a></li>
+                <li><a href="/lecture-4/getting-started.html">Getting Started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>SDEV</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper.</p>
+            <a href="getting-started.html" class="button">Get Started</a>
+        </section>
+        <div class="feature-list">
+            <section class="container">
+                <img class="feature-img" src="https://placehold.co/300x200" alt="">
+                <h2>Feature</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper. Suspendisse pulvinar, velit ac pharetra commodo, diam lacus sollicitudin tellus, a consectetur enim orci non felis.</p>
+            </section>
+            <section class="container">
+                <img class="feature-img" src="https://placehold.co/300x200" alt="">
+                <h2>Feature</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper. Suspendisse pulvinar, velit ac pharetra commodo, diam lacus sollicitudin tellus, a consectetur enim orci non felis.</p>
+            </section>
+            <section class="container">
+                <img class="feature-img" src="https://placehold.co/300x200" alt="">
+                <h2>Feature</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra id erat vel semper. Suspendisse pulvinar, velit ac pharetra commodo, diam lacus sollicitudin tellus, a consectetur enim orci non felis.</p>
+            </section>
+        </div>
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" placeholder="john@example.com">
+                <fieldset>
+                    <legend>Select why you are contacting us</legend>
+                    <label for="career">Careers</label>
+                    <input type="radio" name="contact-type" id="career">
+                    <label for="support">Support</label>
+                    <input type="radio" name="contact-type" id="support">
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Copyright © 2014-2025 Eric Sexton
+    </footer>
+</body>
+</html>

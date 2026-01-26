@@ -1,5 +1,4 @@
-# Simple Website Template — Beginner-Friendly Template
-Welcome! This is a minimal website project template designed for a college-level Website Development course. It is tailored for beginners so you can focus on HTML/CSS/JS fundamentals without extra complexity.
+# SDEV153 Spring First 8 Weeks - Lecture Demos 
 
 ## What's in this project?
 - `index.html` — a simple starter page to edit.

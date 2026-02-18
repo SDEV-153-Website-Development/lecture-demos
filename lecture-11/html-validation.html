@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *:invalid {
+            outline-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="range" name="age" min="5" max="120" />
+        <input type="checkbox" name="agree" required />
+        <input type="password" name="password" minlength="10" maxlength="16" />
+        <input
+            type="text"
+            name="credit"
+            pattern="^\d{16}$"
+            title="exactly 16 digits"
+        />
+        <input type="submit" />
+    </form>
+</body>
+</html>
